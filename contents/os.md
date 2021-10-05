@@ -201,6 +201,7 @@
 > - []()
 
 ### 캐시의 지역성
+* 뚜루루루룰
 > :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/WeareSoft/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/WeareSoft/tech-interview#tech-interview)
 > - []()
 
