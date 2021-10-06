@@ -200,6 +200,22 @@
 > :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/WeareSoft/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/WeareSoft/tech-interview#tech-interview)
 > - []()
 
+### 캐시 메모리
+* 주기억장치에서 자주 사용하는 프로그램과 데이터를 저장해두어 속도를 빠르게 하는 메모리
+  * 캐시는 주기억장치보다 크기가 작다.
+  * 캐시 기억장치와 주기억장치 사이에서 정보를 옮기는 것을 사상(Mapping, 매핑) 이라고 한다.
+    * 매핑의 3가지 방법
+      - 직접 매핑(Direct Mapping), 연관 매핑(Associate Mapping), 집합 연관 매핑(Set Associate Mapping)
+
+* 속도가 빠른 장치와 느린 장치간의 속도 차에 따른 병목현상을 줄이기 위한 범용 메모리
+  * 이를 위해서는 CPU가 어떤 데이터를 원하는지 어느 정도 예측할 수 있어야 한다.
+  * 캐시 메모리에 CPU가 이후에 참조할, 필요 있는 정보가 어느 정도 들어있느냐에 따라 캐시의 성능이 좌우되기 때문이다.
+
+* 주기억장치와 CPU사이에 위치
+* 메모리 계층 구조에서 가장 빠른소자이며, 처리 속도가 거의 CPU의 속도와 비슷하다.
+* 캐시메모리를 사용하면 주 기억장치를 접근하는 횟수가 줄어들어 컴퓨터의 처리 속도가 향상된다.
+* <img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fv3WSG%2FbtqZFubbl5U%2FTI3gJmlT7Lw86Rk6gvwk4K%2Fimg.png">
+
 ### 캐시의 지역성
 * 뚜루루루룰
 > :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/WeareSoft/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/WeareSoft/tech-interview#tech-interview)
