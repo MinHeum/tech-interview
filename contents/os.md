@@ -205,7 +205,7 @@
   * 캐시는 주기억장치보다 크기가 작다.
   * 캐시 기억장치와 주기억장치 사이에서 정보를 옮기는 것을 사상(Mapping, 매핑) 이라고 한다.
     * 매핑의 3가지 방법
-      - 직접 매핑(Direct Mapping), 연관 매핑(Associate Mapping), 집합 연관 매핑(Set Associate Mapping)
+    - 직접 매핑(Direct Mapping), 연관 매핑(Associate Mapping), 집합 연관 매핑(Set Associate Mapping)
 
 * 속도가 빠른 장치와 느린 장치간의 속도 차에 따른 병목현상을 줄이기 위한 범용 메모리
   * 이를 위해서는 CPU가 어떤 데이터를 원하는지 어느 정도 예측할 수 있어야 한다.
@@ -214,12 +214,27 @@
 * 주기억장치와 CPU사이에 위치
 * 메모리 계층 구조에서 가장 빠른소자이며, 처리 속도가 거의 CPU의 속도와 비슷하다.
 * 캐시메모리를 사용하면 주 기억장치를 접근하는 횟수가 줄어들어 컴퓨터의 처리 속도가 향상된다.
-* <img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fv3WSG%2FbtqZFubbl5U%2FTI3gJmlT7Lw86Rk6gvwk4K%2Fimg.png">
+  * <img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fv3WSG%2FbtqZFubbl5U%2FTI3gJmlT7Lw86Rk6gvwk4K%2Fimg.png">
+> :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/MinHeum/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/MinHeum/tech-interview#tech-interview)
 
 ### 캐시의 지역성
-* 뚜루루루룰
-> :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/WeareSoft/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/WeareSoft/tech-interview#tech-interview)
-> - []()
+* 캐시가 효율적으로 동작하려면, 캐시의 적중율(Hit-rate)를 극대화 시켜야한다.
+* 캐시에 저장할 데이터가 지역성(Locality)을 가져야한다.
+* 지역성이란, 데이터 접근이 시간적, 또는 공간적으로 가깝게 일어나는 것을 의미한다.
+* 지역성의 전제 조건으로 프로그램은 모든 코드나 데이터를 균등하게 Access하지 않는다는 특성을 기본으로 한다.
+* 즉, 지역성(Locality)이란 기억장치 내의 정보를 균일하게 Access하는 것이 아닌 어느 한 순간에 특정 부분을 집중적으로 참조하는 특성이다.
+
+* 시간적 지역성
+  * 특정 데이터가 한번 접근되었을 경우, 가까운 미래에 또 한 번 데이터에 접근할 가능성이 높은 것
+  * 메모리 상의 같은 주소에 여러 차례 읽기 쓰기를 수행할 경우 상대적으로 작은 크기의 캐시를 사용해도 효율성을 꾀할 수 있음.
+
+* 공간적 지역성
+  * 특정 데이터와 가까운 주소가 순서대로 접근되었을 경우
+  * CPU 캐시나 디스크 캐시의 경우 한 메모리 주소에 접근할 때 그 주소뿐 아니라 해당 블록을 전부 캐시에 가져오게 된다.
+  * 이 때 메모리 주소를 오름차순이나 내림차순으로 접근한다면 캐시에 이미 저장된 같은 블록의 데이터를 접근하게 되므로 캐시의 효율성이 크게 향상된다.
+
+> :arrow_double_up:[Top](#3-operating-system)    :leftwards_arrow_with_hook:[Back](https://github.com/MinHeum/tech-interview#3-operating-system)    :information_source:[Home](https://github.com/MinHeum/tech-interview#tech-interview)
+> - [굳세게 코딩하는 단발머리 첼씨](https://chelseashin.tistory.com/43)
 
 ### 교착상태의 개념과 조건
 * 교착상태(데드락, Deadlock) 란
